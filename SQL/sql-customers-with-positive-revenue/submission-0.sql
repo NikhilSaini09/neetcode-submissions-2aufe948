@@ -1,0 +1,6 @@
+-- Write your query below
+SELECT customer_id
+FROM CUSTOMERS
+WHERE YEAR = 2020
+GROUP BY CUSTOMER_ID
+HAVING SUM(REVENUE) > 0;
